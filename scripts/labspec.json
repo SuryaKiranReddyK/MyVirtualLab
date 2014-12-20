@@ -63,14 +63,14 @@
                     "stop": []
                 },
                 "memory": {
-                    "max_required": "",
-                    "min_required": ""
+                    "max_required": "128mb",
+                    "min_required": "2gb"
                 },
                 "os": "ubuntu",
                 "osVersion": "12",
                 "servicepack": "",
                 "storage": {
-                    "min_required": ""
+                    "min_required": "10g"
                 }
             }
         }
