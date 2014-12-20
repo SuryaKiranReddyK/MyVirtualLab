@@ -1,0 +1,79 @@
+{
+    "lab": {
+      "description": {
+            "id": "CSE98",
+            "name": "Data Structures",
+            "discipline": ["Computer Science & Engineering"],
+            "status": "",
+            "type": "",
+            "integration_level": 0,
+            "server-side": true,
+            "developer": [
+                {
+                    "contact": {
+                        "email": "enhanceedu@iiit.ac.in",
+                        "alternate_email": "",
+                        "mobile_number": "",
+                        "office_number": "04066531357"
+                    },
+                    "department": "EnhanceEdu",
+                    "institute": "IIIT Hyderabad",
+                    "name": "Surya Kiran Reddy",
+                    "organization": "IIIT Hyderabad",
+                    "role": "Programmer",
+                    "title": "Lead Programmer",
+                    "web": "enhanceedu.iiit.ac.in"
+                }
+            ]
+        },
+        "build_requirements": {
+            "platform": {
+                "arch": "",
+                "build_steps": {
+                    "build": ["make -C ../src"],
+                    "configure": [],
+                    "post_build": [],
+                    "pre_build": [],
+                    "status": []
+                },
+                "installer": ["sudo apt-get update", 
+             "sudo apt-get install -y apache2"],
+                "os": "ubuntu",
+                "osVersion": "12",
+                "service_pack": ""
+            }
+        },
+        "runtime_requirements": {
+            "platform": {
+                "arch": "",
+                "hosting": "",
+                "installer": [""],
+                "lab_actions": {
+                    "backup": [],
+                    "clean": [],
+                    "init": ["mv /var/www/index.html index.html.default",
+         "cp -r ../src/* /var/www/"],
+                    "pause": [],
+                    "publish": [],
+                    "restore": ["restore"],
+                    "resume": [],
+                    "shutdown": ["service apache2 stop"],
+                    "start": ["service apache2 start"],
+                    "stats": [],
+                    "stop": []
+                },
+                "memory": {
+                    "max_required": "",
+                    "min_required": ""
+                },
+                "os": "ubuntu",
+                "osVersion": "12",
+                "servicepack": "",
+                "storage": {
+                    "min_required": ""
+                }
+            }
+        }
+    },
+    "template": "1.0"
+}
